@@ -6,13 +6,13 @@ const ModalContent = () => {
     return (
     <>
             <div className='flex flex-col items-center justify-center h-full'>
-                <Text size="lg" mb="md">Create Job Opening</Text>
+                <Text fw={550} size="lg" mb="md">Create Job Opening</Text>
             </div>
             <div className='flex flex-col items-center px-8 py-4'>
                 <div className='grid grid-cols-2 gap-8 w-full'>
                     <div className='flex flex-col'>
                         <div>
-                            <Text>Job Title</Text>
+                            <Text fw={500}>Job Title</Text>
                         </div>
                         <div>
                             <Input  radius="md" size='md' placeholder="Full Stack Developer" />
@@ -20,10 +20,10 @@ const ModalContent = () => {
                     </div>
                     <div className='flex flex-col '>
                         <div>
-                            <Text>Company Name</Text>
+                            <Text fw={500}>Company Name</Text>
                         </div>
                         <div >
-                            <Input  radius="md" size='md' placeholder="Amazon, Microsoft, Swiggy" />
+                            <Input radius="md" size='md' placeholder="Amazon, Microsoft, Swiggy" />
                         </div>
                     </div>
                     <div className='flex flex-col'>
@@ -52,7 +52,7 @@ const ModalContent = () => {
                     </div>
                     <div className='flex flex-col '>
                         <div>
-                            <Text>Salary Range</Text>
+                            <Text fw={500}>Salary Range</Text>
                         </div>
                         <div className="flex items-center text-sm gap-2">
                             <div className="relative ">
@@ -96,7 +96,7 @@ const ModalContent = () => {
                     </div>
                     <div className='flex flex-col '>
                         <div>
-                            <Text>Application Deadline</Text>
+                            <Text fw={500}>Application Deadline</Text>
                         </div>
                         <div>
                             <Flatpickr
@@ -114,7 +114,7 @@ const ModalContent = () => {
             </div>
             <div className='flex flex-col items-center px-8 py-4'>
                 <div className='justify-start w-full'>
-                <Text size="lg" mb="md">Job Description</Text>
+                <Text fw={500} size="lg" mb="md">Job Description</Text>
                 </div>
                 <div className='w-full rounded-xl'>
                     <Textarea  minRows={4} maxRows={5} autosize placeholder="Please share a description to let the candidate know more about the job role" />

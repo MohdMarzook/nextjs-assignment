@@ -13,7 +13,7 @@ function home() {
       </div>
       <div className='flex flex-wrap gap-4 justify-center p-16'>
         {Array.from({ length: 8 }, (_, index) => (
-          <ProductCard />
+          <ProductCard key={index} />
         ))}
       </div>
     </main>
